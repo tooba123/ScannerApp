@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@drawable/bg_blue_rounded_corners"
+    android:backgroundTint="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/ic_convert"
+        android:tint="@color/orange"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+    />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_success"
+        android:layout_width="30dp"
+        android:layout_height="70dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleY="2"
+        android:scaleX="2"
+        android:src="@drawable/ic_done"
+        android:tint="@color/orange"
+
+
+        android:visibility="invisible"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:text="@string/image_to_pdf_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_success"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_heading"
+        android:textColor="@color/purple_700"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"/>
+
+
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/cpb"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_path"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/purple_500"
+        style="?android:attr/progressBarStyleLarge"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_path"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/bg_gray_square_border"
+        android:backgroundTint="@color/orange"
+        android:text="@string/close"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

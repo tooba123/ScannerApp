@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Document Scanner</string>
+    <string name="scan_files">Scan Files</string>
+    <string name="upload_doc">Upload a Document</string>
+    <string name="upload_doc_desc">You can upload any PNG or JPEG document</string>
+    <string name="files_list">Files List</string>
+    <string name="file_name">File Name</string>
+    <string name="size">SIZE</string>
+    <string name="format">FORMAT</string>
+    <string name="photo_option_instruction">Please choose option below to take photo from.</string>
+    <string name="image_to_pdf_message">Converting Image to PDF. Please wait...</string>
+    <string name="file_size">Size</string>
+    <string name="date_created">26/09/2022</string>
+    <string name="close">Close</string>
+    <string name="document_scanner">Document Scanner</string>
+    <string name="scroller_description">Scroll to straighten the desired object</string>
+
+
+    <string name="black_and_white">Black and White</string>
+    <string name="gray_scale">Gray Scale</string>
+    <string name="colored">Colored</string>
+
+    <string name="ad_unit_id">/6499/example/banner</string>
+    <string name="admob_app_id">ca-app-pub-4520204424080038~2057249401</string>
+
+    <string name="ad_unit_banner_id">ca-app-pub-4520204424080038/1880058920</string>
+    <string name="ad_unit_interstitial_id">ca-app-pub-4520204424080038/6141903412</string>
+
+
+
+</resources>

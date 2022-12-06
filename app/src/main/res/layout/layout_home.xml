@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+
+    >
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_files"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gray_square_border"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_blue_rounded_corners">
+
+
+
+            <RelativeLayout
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/bg_white_circle"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_upload"
+                    app:tint="@color/blue"
+                    android:scaleX="1.3"
+                    android:scaleY="1.3"
+                    android:scaleType="centerInside"
+
+                    />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/rv_add"
+                android:layout_width="83dp"
+                android:layout_height="83dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="29dp"
+                android:background="@drawable/bg_white_circle"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_upload_doc_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_add"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="11dp"
+                android:text="@string/upload_doc"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_upload_doc_heading"
+                android:layout_centerHorizontal="true"
+                android:text="@string/upload_doc_desc"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
